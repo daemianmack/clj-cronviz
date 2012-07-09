@@ -32,7 +32,7 @@ Over time, cron jobs accrete into an impenetrable, opaque mass of text. Trying t
 cronviz can help, by parsing stuff like this...
 
 ````
-({:command "do_some_stuff", :dates (#<DateTime 2012-07-07T00:17:00.000Z> #<DateTime 2012-07-07T03:17:00.000Z> #<DateTime 2012-07-07T06:17:00.000Z>)})
+({:command "do_some_stuff", :dates (#<DateTime 2012-07-07T00:17:00.000Z> #<DateTime 2012-07-07T03:17:00.000Z>)})
 ````
 
 out of stuff like this...
@@ -61,9 +61,9 @@ out of stuff like this...
 * * * * * /usr/bin/whenever
 ````
 
-## USAGE
+## Usage
 
-You'll need to pass the contents of a crontab file and two date strings parseable by (cljtime/date-time)[https://github.com/KirinDave/clj-time] to act as book-ends for the period of time you're interested in generating dates across. cronviz will return all matching datetimes from the crontab contents...
+You'll need to pass the contents of a crontab file and two date strings parseable by [cljtime/date-time](https://github.com/KirinDave/clj-time) to act as book-ends for the period of time you're interested in generating dates across. cronviz will return all matching datetimes from the crontab contents...
 
 ````
 (def earliest "2011 12 08 0 0") 
@@ -78,7 +78,7 @@ You'll need to pass the contents of a crontab file and two date strings parseabl
 
 - Unfortunately there's no simple way to know what time a job finished short of 1) altering the crontab command or the job it fires, and 2) getting that information into cronviz. Minus that, cronviz can only tell you what time a job has *started*.
 
-## TESTING
+## Testing
 
 ````
 lein expectations
