@@ -83,3 +83,7 @@ You'll need to pass the contents of a crontab file and two date strings parseabl
 ````
 lein expectations
 ````
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/daemianmack/clj-cronviz/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
